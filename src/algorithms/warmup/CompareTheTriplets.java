@@ -1,6 +1,9 @@
+package algorithms.warmup;
 import java.util.Scanner;
 
 public class CompareTheTriplets {
+
+	// https://www.hackerrank.com/challenges/compare-the-triplets
 
 	public static void main(String[] args) {
 		takeInput();

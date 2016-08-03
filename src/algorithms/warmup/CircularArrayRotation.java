@@ -1,4 +1,7 @@
+package algorithms.warmup;
 import java.util.Scanner;
+
+//https://www.hackerrank.com/challenges/circular-array-rotation
 
 public class CircularArrayRotation {
 
@@ -19,7 +22,7 @@ public class CircularArrayRotation {
 		for (int i = 0; i < query; ++i) {
 			queries[i] = in.nextInt();
 		}
-		initCircularRotation(shift,arr, queries);
+		initCircularRotation(shift, arr, queries);
 		in.close();
 	}
 

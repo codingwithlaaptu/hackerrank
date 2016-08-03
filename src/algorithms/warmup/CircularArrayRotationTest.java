@@ -1,3 +1,4 @@
+package algorithms.warmup;
 import static org.junit.Assert.*;
 
 import org.junit.Test;

@@ -1,3 +1,4 @@
+package algorithms.warmup;
 import org.junit.Test;
 
 public class CompareTheTripletsTest {
