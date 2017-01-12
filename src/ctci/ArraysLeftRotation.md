@@ -30,4 +30,6 @@ What concepts are there in array left rotation
     
     {1,2,3,4} = {3,4,1,2}
     
-4. Above 3 also can be looked in a different way 
+4. Above 3 also can be looked in a different way, if any items are left rotated by the size of array, it will end up in the same position. Here size of array is 4, so any multiple of 4 will wound up the item in the same position
+
+![Left Rotation Item](https://github.com/codingwithlaaptu/hackerrank/blob/master/pics/ArrayLeftRotation.png) 
