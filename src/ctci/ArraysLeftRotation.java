@@ -11,7 +11,7 @@ public class ArraysLeftRotation {
 	public static int[] arrayLeftRotation(int[] a, int n, int k) {
 		int d = n - k;
 		if (d == 0)
-			d = k;
+			return a;
 		int[] b = new int[n];
 		for (int i = 0; i < n; ++i)
 			b[(i + d) % n] = a[i];
