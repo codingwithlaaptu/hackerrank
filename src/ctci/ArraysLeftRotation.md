@@ -33,3 +33,31 @@ What concepts are there in array left rotation
 4. Above 3 also can be looked in a different way, if any items are left rotated by the size of array, it will end up in the same position. Here size of array is 4, so any multiple of 4 will wound up the item in the same position
 
 ![Left Rotation Item](https://github.com/codingwithlaaptu/hackerrank/blob/master/pics/ArrayLeftRotation.png) 
+
+These are the basics of left shift of items. But in the [question](https://www.hackerrank.com/challenges/ctci-array-left-rotation), it is asking to shift the array
+
+![Left Rotation Item](https://github.com/codingwithlaaptu/hackerrank/blob/master/pics/array_left_rotation_example.png)
+
+Solution: I found the solution from pattern, instead of any property. In the example above in the final array we only see, there is 1 left shift of item
+
+array size = 5
+
+shift value = 4
+
+final array item shift = 1 ( 5-4)
+
+I validated the same with other examples and it came accurate.
+
+```
+static String input1 = "41 73 89 7 10 1 59 58 84 77 77 97 58 1 86 58 26 10 86 51";
+static String output1 = "77 97 58 1 86 58 26 10 86 51 41 73 89 7 10 1 59 58 84 77";
+static int shift1 = 10;
+int arraysize = 20
+```		 
+
+So in the above example also the shift  = 10 (20-10)
+
+I tested all of these hypothesis and it worked. The core concept of this working is still yet to be found. 
+		   
+
+
