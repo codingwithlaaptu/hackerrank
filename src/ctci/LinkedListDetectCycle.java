@@ -1,8 +1,5 @@
 package ctci;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class LinkedListDetectCycle {
 	static class Node {
 		int data;
@@ -10,21 +7,38 @@ public class LinkedListDetectCycle {
 	}
 
 	boolean hasCycle(Node head) {
-		boolean hasCycle = detectCycle(head);
-		set.clear();
-		return hasCycle;
+		// return forcedSolution(100, head);
+		return detectCycle(head);
 	}
 
-	Set<Integer> set = new HashSet<>();
+	/**
+	 * This was done, as input range was between 0 to 100 This is not an
+	 * efficient solution
+	 */
+	boolean forcedSolution(int count, Node head) {
+		if (head == null)
+			return false;
+		--count;
+		if (count <= 0)
+			return true;
+		return forcedSolution(count, head.next);
+	}
 
 	boolean detectCycle(Node head) {
 		if (head == null)
 			return false;
-		System.out.println("Head data " + head.data);
-		if (set.contains(head.data))
-			return true;
-
-		set.add(head.data);
-		return detectCycle(head.next);
+		Node slow = head;
+		Node fast = head.next;
+		while (true) {
+			if (slow == fast)
+				return true;
+			if (slow == null || fast == null)
+				return false;
+			slow = slow.next;
+			if (fast.next == null)
+				return false;
+			fast = fast.next.next;
+		}
 	}
+
 }
