@@ -23,12 +23,20 @@ boolean detectCycle(Node head) {
 		while (true) {
 			if (slow == fast)
 				return true;
-			if (slow == null || fast == null)
+			if (slow == null || fast == null || fast.next ==null)
 				return false;
 			slow = slow.next;
-			if (fast.next == null)
-				return false;
 			fast = fast.next.next;
 		}
 }
 ````
+
+#### Code visualization
+[Linked List 1 -4, cyclic = false ](https://goo.gl/dF41ix)
+![false cyclic](![cyclic true again](https://github.com/codingwithlaaptu/hackerrank/blob/master/pics/cyclic_false_1_4.png))
+
+[Linked List 1-8, 8 points to 4, cyclic = true](https://goo.gl/20s5T4)
+![true cyclic](![cyclic true again](https://github.com/codingwithlaaptu/hackerrank/blob/master/pics/cyclic_true_1_8.png))
+
+[Linked List 1-4, 4 points to 1, cyclic = true](https://goo.gl/AgkHmy)
+![true cyclic](![cyclic true again](https://github.com/codingwithlaaptu/hackerrank/blob/master/pics/cyclic_true_1_4.png))

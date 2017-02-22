@@ -24,6 +24,9 @@ public class LinkedListDetectCycle {
 		return forcedSolution(count, head.next);
 	}
 
+	/**
+	 * Taken from a solution at hackerrank https://goo.gl/dyTXvE
+	 */
 	boolean detectCycle(Node head) {
 		if (head == null)
 			return false;
@@ -32,11 +35,9 @@ public class LinkedListDetectCycle {
 		while (true) {
 			if (slow == fast)
 				return true;
-			if (slow == null || fast == null)
+			if (slow == null || fast == null || fast.next == null)
 				return false;
 			slow = slow.next;
-			if (fast.next == null)
-				return false;
 			fast = fast.next.next;
 		}
 	}
