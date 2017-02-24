@@ -10,6 +10,10 @@ Solution
 
 3. Cyclic = TRUE
 ![cyclic true again](https://github.com/codingwithlaaptu/hackerrank/blob/master/pics/cyclic_true_again.png)
+
+#### Main logic
+![logic](https://github.com/codingwithlaaptu/hackerrank/blob/master/pics/cyclic_logic.png)
+
 ````
 /**
 * Taken from  a solution at hackerrank
